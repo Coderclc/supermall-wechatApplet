@@ -1,0 +1,3 @@
+<!--pages/detail/detail.wxml-->
+<text>pages/detail/detail.wxml</text>
+<navigator open-type="navigateBack">backto</navigator>

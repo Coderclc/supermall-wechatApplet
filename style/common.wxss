@@ -1,0 +1,10 @@
+.div1{
+  width: 100px;
+  height: 100px;
+  background-color: #008c8c;
+}
+.div2{
+  width: 200rpx;
+  height: 200rpx;
+  background-color: red
+}

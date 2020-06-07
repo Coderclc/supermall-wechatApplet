@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+  },
+  "navigationBarTitleText": "蘑菇街女装",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh":true
+}
