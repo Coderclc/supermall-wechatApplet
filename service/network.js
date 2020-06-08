@@ -5,6 +5,7 @@ export default function(options) {
     wx.request({
       url: baseUrl + options.url,
       method:options.method||"get",
+      data:options.data||{},
       success:resolve,
       fail:reject
     })
