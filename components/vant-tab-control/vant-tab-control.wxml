@@ -1,0 +1,13 @@
+<view class="vant-tab-control sticky">
+	<van-tabs active="{{currentIndex}}" 
+            bind:change="itemClick"
+            color="#ff5777"
+            tab-active-class="actived"
+            >
+		<block wx:for="{{titles}}" wx:key="unique">
+			<van-tab 
+      title="{{item}}"
+      />
+		</block>
+	</van-tabs>
+</view>

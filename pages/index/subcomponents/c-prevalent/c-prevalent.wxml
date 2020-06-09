@@ -1,0 +1,4 @@
+<view class="c-prevalent">
+  <van-image width="750rpx" height="543rpx" mode="widthFix"
+  src="/assets/img/index/FeatureView.jpg"/>
+</view>

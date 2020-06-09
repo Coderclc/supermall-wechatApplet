@@ -1,13 +1,9 @@
-<!--  -->
-<swiper class="swiper" 
-        indicator-dots 
-        indicator-active-color="#ff5777" 
-        autoplay interval="3000" 
-        duration="300" 
-        circular>
-	<block wx:for="{{swiper}}" wx:key="unique">
-		<swiper-item class="swiper-item">
-			<image src="{{item.image}}" lazy-load mode="widthFix" />
-		</swiper-item>
-	</block>
-</swiper>
+<view class="c-swiper">
+	<swiper class="swiper" indicator-dots indicator-active-color="#ff5777" autoplay interval="3000" duration="300" circular>
+		<block wx:for="{{swiper}}" wx:key="unique">
+			<swiper-item class="swiper-item">
+				<van-image src="{{item.image}}" width="750rpx" height="390rpx" lazy-load />
+			</swiper-item>
+		</block>
+	</swiper>
+</view>

@@ -1,4 +1,7 @@
 {
+  "usingComponents": {
+    "van-image": "@vant/weapp/image/index"
+  },
   "pages": [
     "pages/index/index",
     "pages/category/category",

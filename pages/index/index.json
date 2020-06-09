@@ -1,6 +1,11 @@
 {
   "usingComponents": {
-    "c-swiper":"/components/c-swiper/c-swiper"
+    "c-swiper":"/components/c-swiper/c-swiper",
+    "c-tab-control":"/components/c-tab-control/c-tab-control",
+    "vant-tab-control":"/components/vant-tab-control/vant-tab-control",
+    "c-goods-list":"/components/c-goods-list/c-goods-list",
+    "c-recommend":"./subcomponents/c-recommend/c-recommend",
+    "c-prevalent":"./subcomponents/c-prevalent/c-prevalent"
   },
   "navigationBarTitleText": "蘑菇街女装",
   "navigationBarBackgroundColor": "#fff",

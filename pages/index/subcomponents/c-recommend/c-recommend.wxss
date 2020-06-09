@@ -1,0 +1,4 @@
+.c-recommend{
+  border-bottom: 16rpx solid #eee;
+  font-size: 30rpx;
+}

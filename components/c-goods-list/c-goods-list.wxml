@@ -1,0 +1,14 @@
+<wxs src="../../wxs/filter.wxs" module="filter" />
+
+<view class="c-goods-list">
+	<block wx:for="{{goods}}" wx:key="unique">
+		<view class="c-goods-list-item">
+			<van-image src="{{item.show.img}}" width="320rpx" height="480rpx" lazy-load radius="20rpx"/>
+			<view class="info">
+				<view class="title">{{item.title}}</view>
+				<text class="price">{{filter.filterPrice(item.price)}}</text>
+				<text class="cfav">{{item.cfav}}</text>
+			</view>
+		</view>
+	</block>
+</view>

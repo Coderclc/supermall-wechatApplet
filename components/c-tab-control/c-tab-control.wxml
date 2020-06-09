@@ -1,0 +1,9 @@
+<view class="c-tab-control sticky">
+	<block wx:for="{{titles}}" wx:key="unique">
+		<view 
+		class="tab-control-item {{currentIndex==index?'actived':''}}"
+		bindtap="itemClick" data-index="{{index}}">
+			<text class="text">{{item}}</text>
+		</view>
+	</block>
+</view>

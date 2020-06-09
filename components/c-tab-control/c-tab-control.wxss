@@ -1,0 +1,19 @@
+.c-tab-control{
+  display: flex;
+  line-height: 100rpx;
+  text-align: center;
+  background-color: #fff;
+
+}
+.tab-control-item{
+  flex: 1;
+}
+.actived{
+  color: #ff5777;
+}
+.text{
+  padding-bottom: 10rpx;
+}
+.actived .text{
+  border-bottom: 6rpx solid #ff5777;
+}

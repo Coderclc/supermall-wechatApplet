@@ -1,0 +1,6 @@
+.sticky {
+  /* 粘性布局 相对于父元素不能有hidden*/
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}

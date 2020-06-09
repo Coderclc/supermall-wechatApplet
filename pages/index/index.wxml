@@ -1,1 +1,8 @@
 <c-swiper swiper="{{banners}}" />
+<c-recommend recommends="{{recommends}}" />
+<c-prevalent />
+<!-- native tab-control-->
+<!-- <c-tab-control  titles="{{titles}}" sticky="sticky"
+bind:tabControl="tabControl"/> -->
+<vant-tab-control titles="{{titles}}" sticky="sticky" bind:tabControl="tabControl" />
+<c-goods-list goods="{{goods[currentType].list}}" />

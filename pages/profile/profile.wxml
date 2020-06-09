@@ -1,2 +1,3 @@
-<!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<image src="../../vmgirl.jpg"></image>
+<van-image src="https://img.yzcdn.cn/vant/cat.jpeg"  width="10rem"
+  height="10rem"/>

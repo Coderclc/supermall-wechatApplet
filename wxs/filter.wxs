@@ -1,0 +1,7 @@
+function filterPrice(value){
+  value=+value
+  return "￥"+value.toFixed(2)
+}
+module.exports={
+  filterPrice:filterPrice
+}
