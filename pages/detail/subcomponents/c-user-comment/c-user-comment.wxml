@@ -1,0 +1,22 @@
+<view class="c-user-comment" wx:if="{{commentInfo}}">
+	<view class="comment-title">
+		<view class="user-review">用户评价</view>
+		<view class="more">更多</view>
+	</view>
+	<view class="comment-content">
+		<view class="comment-user">
+			<image class="image" src="{{commentInfo.user.avatar}}" />
+			<text class="text">{{commentInfo.user.uname}}</text>
+		</view>
+		<view class="comment-text">{{commentInfo.content}}</view>
+		<view class="comment-data">
+			<text>{{commentInfo.created}}</text>
+			<text>{{commentInfo.style}}</text>
+		</view>
+		<view class="comment-img">
+			<block wx:for="{{commentInfo.images}}" wx:key="unique">
+				<image class="image" src="{{item}}" />
+			</block>
+		</view>
+	</view>
+</view>

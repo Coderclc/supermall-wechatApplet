@@ -1,66 +1,61 @@
-// pages/shopping/shopping.js
+import {
+  app
+} from "../../utils/js/const"
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    cartList: [],
+    totalPrice: 0,
+    allChecked:''
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  // ----------------------生命周期函数----------------------
+  //每次进入都需要重加载全局列表
+  onShow() {
+    //获取添加在全局数据的cartList
+    this.setData({
+      cartList: app.globalData.cartList,
+      allChecked:app.globalData.allChecked
+    })
+    //default false 有长度为true
+    if(this.data.cartList.length){
+      this.setData({
+        allChecked:true
+      })
+      app.globalData.allChecked=true
+    }
+    this.calcTotalPrice()
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  // ----------------------事件监听函数----------------------
+  change() {
+    this.calcTotalPrice()
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  //计算总价
+  calcTotalPrice() {
+    const totalPrice = 
+    app.globalData.cartList.reduce((previous, x) => {
+      if(x.isCheck){
+      return x.lowNowPrice * x.count + previous
+      }else{
+        return previous
+      }
+    }, 0)
+    this.setData({
+      totalPrice
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  //isCheck modify allCheck
+  checkAllSelected(c){
+    this.setData({
+      allChecked:c.detail
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  //allCheck modify isCheck
+  checkIsCheck(c){
+    this.data.cartList.forEach(item=>{
+      item.isCheck=c.detail
+    })
+    this.setData({
+      cartList:this.data.cartList
+    })
+    this.calcTotalPrice()
   }
 })

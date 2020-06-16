@@ -1,0 +1,13 @@
+<view class="c-nav-bar">
+	<view class="left">
+		<image class="image" src="/assets/img/common/back.svg" bind:tap="backClick" />
+	</view>
+	<view class="center" >
+		<block wx:for="{{titles}}" wx:key="unique">
+			<view class="title-item {{currentIndex==index?'actived':''}}"
+			bind:tap="onClick" data-index="{{index}}">
+				{{item}}
+			</view>
+		</block>
+	</view>
+</view>

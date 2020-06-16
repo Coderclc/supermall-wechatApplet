@@ -1,0 +1,30 @@
+<wxs src="../../../../utils/wxs/filter.wxs" module="filter" />
+
+<view class="c-shop-info">
+	<view class="top">
+		<image class="image" src="{{shopInfo.shopLogo}}" />
+		<text class="name">{{shopInfo.name}}</text>
+	</view>
+	<view class="middle">
+		<view class="middle-item-left">
+			<view class="sales">
+				<view class="sales-count">{{filter.filterSalesCount(shopInfo.csells)}}</view>
+				<view class="sales-text">总销量</view>
+			</view>
+			<view class="wares">
+				<view class="wares-count">{{shopInfo.cgoods}}</view>
+				<view class="wares-text">全部宝贝</view>
+			</view>
+		</view>
+		<view class="middle-item-right">
+			<view wx:for="{{shopInfo.score}}" wx:key="unique" class="middle-item-right-item">
+				<text>{{item.name}}</text>
+				<text class="score {{item.isBetter?'is-better':''}}">{{item.score}}</text>
+				<text class="text {{item.isBetter?'is-better':''}}">{{item.isBetter?"高":"低"}}</text>
+			</view>
+		</view>
+	</view>
+	<view class="bottom">
+		<text class="content">进店逛逛</text>
+	</view>
+</view>

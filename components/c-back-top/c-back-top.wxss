@@ -1,0 +1,10 @@
+.c-back-top{
+  position: fixed;
+  right: 30rpx;
+  top: 1200rpx;
+  z-index: 99;
+}
+.c-back-top .image{
+  width: 100rpx;
+  height: 100rpx;
+}

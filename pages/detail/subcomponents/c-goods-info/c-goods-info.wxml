@@ -1,0 +1,22 @@
+<view class="c-goods-info">
+	<view class="title">
+		{{goodsInfo.title}}
+	</view>
+	<view class="info-price">
+		<text class="price">{{goodsInfo.price}}</text>
+		<text class="old-price">{{goodsInfo.oldPrice}}</text>
+		<text wx:if="{{goodsInfo.discountDesc}}" class="discountDesc"
+    style="background-color:{{goodsInfo.discountBgColor}}">{{goodsInfo.discountDesc}}</text>
+	</view>
+	<view class="info-columns">
+		<text>{{goodsInfo.columns[0]}}</text>
+		<text>{{goodsInfo.columns[1]}}</text>
+		<text>{{goodsInfo.services[0].name}}</text>
+	</view>
+	<view class="info-services">
+		<view wx:for="{{goodsInfo.services.length-2}}" wx:key="unique">
+			<image class="image" src="{{goodsInfo.services[index+1].icon}}" />
+			<text class="text">{{goodsInfo.services[index+1].name}}</text>
+		</view>
+	</view>
+</view>

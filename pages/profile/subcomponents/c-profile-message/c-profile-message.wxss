@@ -1,0 +1,18 @@
+@import "/assets/wxss/iconfont.wxss";
+.iconfont{
+  color:#ff5777;
+  margin:0 16rpx
+}
+.item{
+  display: flex;
+  font-size: 30rpx;
+  line-height: 80rpx;
+}
+.message .text{
+  border-bottom: 4rpx solid #ddd;
+  width: 640rpx;
+  display: inline-block;
+}
+.item:last-child .message .text{
+  border-bottom-width: 0;
+}

@@ -1,2 +1,8 @@
-<!--pages/shopping/shopping.wxml-->
-<text>pages/shopping/shopping.wxml</text>
+<view id="shopping">
+	<c-cart-list cartList="{{cartList}}"
+	bind:checkAllSelected="checkAllSelected"
+	bind:change="change"/>
+	<c-submit-bar allChecked="{{allChecked}}"
+	totalPrice="{{totalPrice}}"
+	bind:checkIsCheck="checkIsCheck"/>
+</view>

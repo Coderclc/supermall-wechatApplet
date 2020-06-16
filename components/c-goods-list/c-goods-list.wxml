@@ -1,9 +1,11 @@
-<wxs src="../../wxs/filter.wxs" module="filter" />
-
+<wxs src="../../utils/wxs/filter.wxs" module="filter" />
+<wxs src="../../utils/wxs/show.wxs" module="show" />
 <view class="c-goods-list">
 	<block wx:for="{{goods}}" wx:key="unique">
 		<view class="c-goods-list-item">
-			<van-image src="{{item.show.img}}" width="320rpx" height="480rpx" lazy-load radius="20rpx"/>
+			<image class="image"	mode="widthFix"
+			src="{{show.showImage(item)}}" lazy-load 
+			bind:tap="imageClick" data-index="{{index}}"/>
 			<view class="info">
 				<view class="title">{{item.title}}</view>
 				<text class="price">{{filter.filterPrice(item.price)}}</text>

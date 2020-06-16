@@ -1,0 +1,40 @@
+.c-user-comment {
+  padding: 30rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+}
+.comment-title {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20rpx;
+  border-bottom: 4rpx solid #eee;
+}
+.comment-content {
+  margin-top: 20rpx;
+}
+.comment-content .comment-user .image {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+}
+.comment-content .comment-user .text {
+  vertical-align: 20rpx;
+  padding-left: 20rpx;
+}
+.comment-text {
+  padding: 10rpx;
+  font-size: 24rpx;
+  color: #bbb;
+  text-indent: 2em;
+}
+.comment-data {
+  font-size: 24rpx;
+  color: #aabbaa;
+  padding: 10rpx 0;
+  letter-spacing:2rpx
+}
+.comment-img .image{
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 10rpx;
+}

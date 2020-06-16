@@ -1,0 +1,20 @@
+
+function filterPrice(value) {
+  value = +value
+  return "￥" + value.toFixed(2)
+}
+
+function filterSalesCount(value) {
+  value=+value
+  if (value > 10000) {
+    return (value / 10000).toFixed(1) + "万";
+  } else {
+    return value;
+  }
+}
+
+
+module.exports = {
+  filterPrice: filterPrice,
+  filterSalesCount:filterSalesCount,
+}

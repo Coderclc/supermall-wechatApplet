@@ -1,0 +1,70 @@
+.c-shop-info{
+  padding: 50rpx 30rpx;
+  border-bottom: 10rpx solid #f2f5f8;
+}
+.top image {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+  vertical-align: -32rpx;
+  border: 2rpx solid rgba(0, 0, 0, 0.1);
+}
+.middle {
+  margin-top: 30rpx;
+  display: flex;
+}
+.middle-item-left {
+  flex: 1;
+  display: flex;
+  color: #333;
+  text-align: center;
+  border-right: 2rpx solid rgba(0, 0, 0, 0.1);
+  justify-content: space-evenly;
+  align-items: center;
+}
+.middle-item-right {
+  flex: 1;
+  font-size: 26rpx;
+  color: #333;
+}
+.sales-count,
+.wares-count {
+  font-size: 36rpx;
+}
+.sales-text,
+.wares-text {
+  margin-top: 20rpx;
+  font-size: 24rpx;
+}
+.middle-item-right-item {
+  width: 240rpx;
+  margin: auto;
+}
+.score {
+  color: #5ea732;
+  display: inline-block;
+  width: 40rpx;
+  padding: 0 20rpx;
+}
+.score.is-better {
+  color: #f13e3a;
+}
+.middle-item-right-item .text{
+  background-color: #5ea732;
+  color: #fff;
+  text-align: center;
+}
+.middle-item-right-item .text.is-better {
+  background-color: #f13e3a;
+}
+.bottom {
+  text-align: center;
+  margin-top: 20rpx;
+}
+.bottom .content {
+  font-size: 28rpx;
+  background-color: #f2f5f8;
+  padding: 10rpx 100rpx;
+  border-radius: 20rpx;
+}

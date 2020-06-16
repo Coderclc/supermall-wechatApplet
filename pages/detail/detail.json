@@ -1,3 +1,14 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "c-swiper":"/components/c-swiper/c-swiper",
+    "c-goods-list":"/components/c-goods-list/c-goods-list",
+    "c-back-top":"/components/c-back-top/c-back-top",
+    "c-nav-bar":"./subcomponents/c-nav-bar/c-nav-bar",
+    "c-goods-info":"./subcomponents/c-goods-info/c-goods-info",
+    "c-shop-info":"./subcomponents/c-shop-info/c-shop-info",
+    "c-goods-display":"./subcomponents/c-goods-display/c-goods-display",
+    "c-goods-param":"./subcomponents/c-goods-param/c-goods-param",
+    "c-user-comment":"./subcomponents/c-user-comment/c-user-comment",
+    "c-goods-action":"./subcomponents/c-goods-action/c-goods-action"
+  }
 }

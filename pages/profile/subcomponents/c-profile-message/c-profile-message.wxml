@@ -1,0 +1,8 @@
+<view class="c-profile-message addclass">
+	<view class="item" wx:for="{{list}}" wx:key="unique">
+		<view class="iconfont">
+			<view class="iconfont {{item.iconFont}}"></view>
+		</view>
+		<view class="message"><text class="text">{{item.message}}</text></view>
+	</view>
+</view>

@@ -1,8 +1,13 @@
-<c-swiper swiper="{{banners}}" />
-<c-recommend recommends="{{recommends}}" />
-<c-prevalent />
-<!-- native tab-control-->
-<!-- <c-tab-control  titles="{{titles}}" sticky="sticky"
-bind:tabControl="tabControl"/> -->
-<vant-tab-control titles="{{titles}}" sticky="sticky" bind:tabControl="tabControl" />
-<c-goods-list goods="{{goods[currentType].list}}" />
+<view id="index">
+	<c-swiper swiper="{{banners}}" cswiper="cswiper" cswiper-image-size="cswiper-image-size" />
+	<c-recommend recommends="{{recommends}}" bind:recommendLoad="recommendLoad" />
+	<c-prevalent />
+	<!-- native tab-control -->
+	<!-- <c-tab-control titles="{{titles}}" id="tabControl" sticky="sticky" bind:tabControl="tabControl" />
+		<c-tab-control titles="{{titles}}" id="tabControl_" sticky="sticky" bind:tabControl="tabControl"
+		wx:if="{{showTabControl}}" /> -->
+	<vant-tab-control id="tabControl" titles="{{titles}}" bind:tabControl="tabControl" />
+	<vant-tab-control id="tabControl_" titles="{{titles}}" bind:tabControl="tabControl" wx:if="{{showTabControl}}" />
+	<c-goods-list goods="{{goods[currentType].list}}" />
+	<c-back-top wx:if="{{showBackTop}}" />
+</view>

@@ -1,0 +1,51 @@
+.c-goods-info{
+  margin-top: 30rpx;
+  padding: 16rpx;
+  border-bottom: 10rpx solid #f2f5f8;
+}
+.title {
+  color: #222;
+}
+.info-price {
+  margin-top: 20rpx;
+}
+.info-price .price {
+  font-size: 40rpx;
+  color: #ff5777
+}
+.info-price .old-price {
+  font-size: 26rpx;
+  margin-left: 10rpx;
+  text-decoration: line-through;
+}
+.info-price .discountDesc {
+  font-size: 24rpx;
+  padding: 4rpx 10rpx;
+  color: #fff;
+  border-radius: 16rpx;
+  margin-left: 10rpx;
+  position: relative;
+  top: -8px;
+}
+.info-columns {
+  margin-top: 30rpx;
+  line-height: 60rpx;
+  display: flex;
+  font-size: 26rpx;
+  border-bottom: 4rpx solid rgba(100, 100, 100, 0.1);
+  justify-content: space-between;
+}
+.info-services {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  padding: 20rpx 0;
+}
+.info-services .image {
+  width: 28rpx;
+  height: 28rpx;
+}
+.info-services .text {
+  font-size: 26rpx;
+  color: #333;
+}

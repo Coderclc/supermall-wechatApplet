@@ -1,0 +1,34 @@
+
+.van-checkbox{
+  position: relative;
+  right: 630rpx;
+  top: -90rpx;
+  display: inline-block;
+}
+.van-card{
+  border-radius: 40rpx;
+  margin: 20rpx 20rpx 0 20rpx;
+}
+.delete{
+  border-radius: 40rpx;
+  text-align: center;
+  line-height: 252rpx;
+  width: 200%;
+  height: 252rpx;
+  color: #fff;
+  background-color: red;
+}
+.title{
+  font-size: 30rpx;
+  width: 60vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.desc{
+  font-size: 24rpx;
+  height: 100rpx;
+  color: #ccc;
+  overflow: hidden;
+  width: 60vw;
+}

@@ -1,12 +1,15 @@
 {
   "usingComponents": {
-    "van-image": "@vant/weapp/image/index"
+    "van-image": "@vant/weapp/image/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-sticky": "@vant/weapp/sticky/index"
   },
   "pages": [
     "pages/index/index",
     "pages/category/category",
     "pages/shopping/shopping",
-    "pages/profile/profile"
+    "pages/profile/profile",
+    "pages/out/out"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ff5777",

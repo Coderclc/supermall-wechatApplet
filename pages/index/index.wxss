@@ -1,6 +1,23 @@
 .sticky {
   /* 粘性布局 相对于父元素不能有hidden*/
+  /* 模拟器没问题,手机实测却不行 */
   position: sticky;
   top: 0;
   z-index: 2;
+}
+#tabControl_{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+/* swiper size */
+.cswiper{
+  width: 750rpx;
+  height: 390rpx;
+}
+.cswiper-image-size{
+  width: 750rpx;
+  height: 390rpx;
 }

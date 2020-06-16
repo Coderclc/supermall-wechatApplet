@@ -1,2 +1,12 @@
-<!--pages/category/category.wxml-->
-<text>pages/category/category.wxml</text>
+<view id="category">
+	<scroll-view scroll-y class="left">
+		<c-tab-menu categories="{{categories}}" bind:sideBarClick="sideBarClick" />
+	</scroll-view>
+	<scroll-view scroll-y class="right" scroll-top="{{backTop}}" bindscroll="onScroll">
+		<c-tab-menu-content class="tab-menu-content" subcategories="{{subcategories}}" />
+		<vant-tab-control titles="{{titles}}" bind:tabControl="tabControl"/>
+		<c-goods-list goods="{{goods[currentType].list}}"/>
+	</scroll-view>
+	<c-back-top 
+	wx:if="{{showBackTop}}" bind:tap="backTopClick" />
+</view>

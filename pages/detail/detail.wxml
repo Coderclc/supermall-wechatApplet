@@ -1,3 +1,14 @@
-<!--pages/detail/detail.wxml-->
-<text>pages/detail/detail.wxml</text>
-<navigator open-type="navigateBack">backto</navigator>
+<view id="detail">
+	<c-nav-bar id="c-nav-bar" bind:navBarClick="navBarClick" />
+	<c-swiper swiper="{{topImages}}" cswiper="cswiper" cswiper-image-size="cswiper-image-size" />
+	<c-goods-info id="c-goods-info" goodsInfo="{{goodsInfo}}" />
+	<c-shop-info shopInfo="{{shopInfo}}" />
+	<c-goods-display detailInfo="{{detailInfo}}" bind:imageDone="displayDone" />
+	<c-goods-param id="goodsParam" goodsParam="{{goodsParam}}" />
+	<c-user-comment id="userComment" commentInfo="{{commentInfo}}" />
+	<c-goods-list id="goodsList" goods="{{recommend}}" />
+	<c-back-top
+	wx:if="{{showBackTop}}" />
+	<c-goods-action bind:addToCart="addToCart"/>
+	<van-toast id="van-toast" />
+</view>

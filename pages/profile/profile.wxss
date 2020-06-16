@@ -1,1 +1,3 @@
-/* pages/profile/profile.wxss */
+.c_arr{
+  border-bottom: 20rpx solid #ddd;
+}

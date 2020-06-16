@@ -1,4 +1,10 @@
 {
   "navigationBarTitleText": "商品分类",
-  "usingComponents": {}
+  "usingComponents": {
+    "c-tab-menu":"./subcomponents/c-tab-menu/c-tab-menu",
+    "c-tab-menu-content":"./subcomponents/c-tab-menu-content/c-tab-menu-content",
+    "vant-tab-control":"/components/vant-tab-control/vant-tab-control",
+    "c-back-top":"/components/c-back-top/c-back-top",
+    "c-goods-list":"/components/c-goods-list/c-goods-list"
+  }
 }

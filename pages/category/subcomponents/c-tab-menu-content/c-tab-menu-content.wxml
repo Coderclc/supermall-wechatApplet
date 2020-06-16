@@ -1,0 +1,11 @@
+<view class="c-tab-menu-content">
+	<block wx:for="{{subcategories}}" wx:key="unique">
+		<view class="ware-item" bindtap="itemClick"
+		data-index="{{index}}">
+			<image class="image" src="{{item.image}}" 
+      mode="widthFix"
+      lazy-load />
+			<text class="ware-title">\n{{item.title}}</text>
+		</view>
+	</block>
+</view>

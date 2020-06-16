@@ -1,0 +1,36 @@
+.c-goods-display{
+  padding: 40rpx 0;
+  border-bottom: 10rpx solid #f2f5f8;
+  font-size: 28rpx;
+}
+.desc {
+  padding: 30rpx;
+  text-indent: 2em;
+}
+.key {
+  padding: 30rpx;
+  color: #333;
+  font-size: 30rpx;
+}
+.before,
+.after {
+  border-bottom: 0.8rpx solid #222;
+  width:180rpx;
+  margin-left: 30rpx;
+}
+.before::before,
+.after::after{
+  content: "";
+  display: block;
+  width: 10rpx;
+  height: 10rpx;
+  background-color: #000;
+}
+.after{
+  position: relative;
+  right: -490rpx;
+}
+.after::after{
+  position: relative;
+  right: -170rpx;
+}

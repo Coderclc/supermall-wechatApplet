@@ -1,0 +1,30 @@
+@import "/assets/wxss/iconfont.wxss";
+.c-profile-login{
+  background-color: #ff5777;
+  height: 13vh;
+}
+.head-portrait {
+  float: left;
+  padding: 10rpx;
+  margin-left: 40rpx;
+  border-radius: 50rpx;
+  background-color: #ddd;
+}
+.icon-wode {
+  font-size: 80rpx;
+  color: #bbb;
+}
+.icon-iconfontjiantou5 {
+  color: #ddd;
+  font-size: 50rpx;
+}
+.login-register {
+  overflow: hidden;
+  color: #fff;
+  font-size: 30rpx;
+  padding: 26rpx 0 0 26rpx;
+}
+.right-arrow {
+  float: right;
+  margin-top: 30rpx;
+}

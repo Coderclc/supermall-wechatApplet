@@ -1,0 +1,20 @@
+<view class="c-goods-param">
+	<view class="size-param">
+		<block wx:for="{{goodsParam.rule.tables[0]}}" wx:key="unique" wx:for-item="table">
+			<view class="size">
+				<block wx:for="{{table}}" wx:key="unique">
+					<view class="size-item">{{item}}</view>
+				</block>
+			</view>
+		</block>
+	</view>
+	<view class="info-param">
+		<block wx:for="{{goodsParam.info.set}}" wx:key="unique" wx:for-item="set">
+			<view class="info">
+				<block wx:for="{{set}}" wx:key="unique">
+					<view class="info-item">{{item}}</view>
+				</block>
+			</view>
+		</block>
+	</view>
+</view>

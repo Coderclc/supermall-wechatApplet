@@ -1,4 +1,8 @@
 {
   "navigationBarTitleText": "我",
-  "usingComponents": {}
+  "usingComponents": {
+    "c-profile-login":"./subcomponents/c-profile-login/c-profile-login",
+    "c-profile-assets":"./subcomponents/c-profile-assets/c-profile-assets",
+    "c-profile-message":"./subcomponents/c-profile-message/c-profile-message"
+  }
 }

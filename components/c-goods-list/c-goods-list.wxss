@@ -9,6 +9,10 @@
   width: 45%;
   margin-top: 30rpx;
 }
+.c-goods-list-item .image{
+  width: 90%;
+  border-radius: 20rpx;
+}
 .c-goods-list .title{
   overflow: hidden;
   text-overflow: ellipsis;

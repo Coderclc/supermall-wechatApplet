@@ -1,0 +1,20 @@
+.c-profile-assets{
+  display: flex;
+  height: 13vh;
+  border-bottom: 20rpx solid #ddd;
+}
+.assets-item{
+  flex: 1;
+  border-right: 10rpx solid #ddd;
+  text-align: center;
+  padding-top:26rpx;
+  font-size: 30rpx;
+}
+.assets-item .price:nth-of-type(1){
+  color: orangered;
+  font-size: 40rpx;
+  font-weight: 700;
+}
+.integral{
+  border-right-width: 0;
+}

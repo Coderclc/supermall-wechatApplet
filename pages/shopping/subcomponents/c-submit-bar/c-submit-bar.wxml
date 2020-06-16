@@ -1,0 +1,5 @@
+<view class="c-submit-bar">
+	<van-submit-bar price="{{totalPrice*100}}" button-text="提交订单">
+		<van-checkbox value="{{allChecked}}" bind:change="onChange"/>
+	</van-submit-bar>
+</view>

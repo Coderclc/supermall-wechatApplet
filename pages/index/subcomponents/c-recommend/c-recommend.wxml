@@ -2,7 +2,8 @@
 	<van-grid border="">
 		<van-grid-item use-slot wx:for="{{recommends}}" wx:key="unique">
 			<van-image width="160rpx" height="160rpx" 
-      src="{{item.image}}" />
+      src="{{item.image}}" 
+			bind:load="imageLoad"/>
 			<text>{{item.title}}</text>
 		</van-grid-item>
 	</van-grid>

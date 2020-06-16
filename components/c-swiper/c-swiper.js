@@ -1,7 +1,8 @@
 Component({
   properties:{
     swiper:{
-      type:Object
+      type:Array
     }
-  }
+  },
+  externalClasses:["cswiper","cswiper-image-size"]
 })

@@ -1,0 +1,19 @@
+<view class="c-cart-list">
+	<view wx:for="{{cartList}}" wx:key="unique" class="cart-list-item">
+		<van-swipe-cell class="swipe-cell" right-width="{{65}}">
+			<van-card custom-class="van-card" num="{{item.count}}" price="{{item.lowNowPrice}}" origin-price="{{item.oldPrice}}" thumb="{{item.image}}" thumb-link="/pages/detail/detail?id={{item.id}}">
+				<view slot="title" class="title">
+					{{item.title}}</view>
+				<view slot="desc" class="desc">
+					{{item.desc}}</view>
+				<view slot="footer">
+					<van-button size="mini" round bind:click="reduce" data-index="{{index}}">-</van-button>
+					<van-button size="mini" round bind:click="increment" data-index="{{index}}">+</van-button>
+					<van-checkbox custom-class="van-checkbox" value="{{item.isCheck}}" checked-color="#ff5777" data-index="{{index}}" bind:change="onChange" />
+				</view>
+			</van-card>
+			<view class="delete" slot="right" bind:tap="deleteClick" data-index="{{index}}">删除</view>
+		</van-swipe-cell>
+
+	</view>
+</view>

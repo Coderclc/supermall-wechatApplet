@@ -1,8 +1,19 @@
 Component({
+  data:{
+    sign:true
+  },
   properties:{
     recommends:{
       type:Array,
       value:[]
+    }
+  },
+  methods:{
+    imageLoad(){
+      if(this.data.sign){
+        this.triggerEvent("recommendLoad")
+        this.data.sign=false
+      }
     }
   }
 })

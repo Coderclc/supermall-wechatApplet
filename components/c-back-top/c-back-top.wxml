@@ -1,0 +1,3 @@
+<view class="c-back-top" bind:tap="backTopClick">
+  <image class="image"src="/assets/img/common/backTop.png"/>
+</view>

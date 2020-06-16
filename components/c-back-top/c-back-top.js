@@ -1,0 +1,10 @@
+Component({
+  methods:{
+    backTopClick(){
+      wx.pageScrollTo({
+        scrollTop:0
+      })
+    }
+  },
+  externalClasses:['customClass']
+})

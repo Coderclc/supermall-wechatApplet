@@ -1,0 +1,11 @@
+<view class="c-goods-display">
+    <view class="before"></view>
+    <view class="desc">{{detailInfo.desc}}</view>
+    <view class="after"></view>
+    <view class="key">{{detailInfo.detailImage[0].key}}</view>
+    <block class="list" wx:for="{{detailInfo.detailImage[0].list}}" wx:key="unique">
+      <image style="width:750rpx;height:100%;"
+      src="{{item}}" mode="widthFix"
+      lazy-load bind:load="imageLoad"/>
+    </block>
+</view>

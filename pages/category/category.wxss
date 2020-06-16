@@ -1,1 +1,11 @@
-/* pages/category/category.wxss */
+
+.left{
+  width: 25vw;
+  display: inline-block;
+  height: 100vh;
+}
+.right{
+  width: 75vw;
+  display: inline-block;
+  height: 100vh;
+}

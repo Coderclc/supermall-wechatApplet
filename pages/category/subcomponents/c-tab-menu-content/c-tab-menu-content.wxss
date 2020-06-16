@@ -1,0 +1,12 @@
+.c-tab-menu-content{
+  font-size: 24rpx;
+  text-align: center;
+}
+.ware-item {
+  padding: 30rpx 10rpx;
+  display: inline-block;
+}
+.ware-item .image {
+  width: 150rpx;
+  padding-bottom: 20rpx;
+}

@@ -1,0 +1,12 @@
+<view class="c-profile-login">
+    <view class="head-portrait">
+      <text class="iconfont icon-wode"></text>
+    </view>
+    <view class="right-arrow">
+      <text class="iconfont icon-iconfontjiantou5"></text>
+    </view>
+    <view class="login-register">
+      <view>登陆/注册</view>
+      <view><text class="icon-shouji iconfont"></text>暂无绑定手机号</view>
+    </view>
+</view>

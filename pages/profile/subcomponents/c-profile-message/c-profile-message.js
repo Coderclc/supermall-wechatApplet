@@ -1,0 +1,9 @@
+Component({
+  properties:{
+    list:{
+      type:Array,
+      value:[]
+    }
+  },
+  externalClasses:["addclass"]
+})

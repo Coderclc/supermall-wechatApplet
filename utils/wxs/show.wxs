@@ -1,0 +1,6 @@
+function showImage(item){
+  return item.image||item.img||item.show.img
+}
+module.exports={
+  showImage:showImage
+}

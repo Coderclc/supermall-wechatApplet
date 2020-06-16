@@ -1,0 +1,11 @@
+<view class="c-goods-action">
+	<van-goods-action>
+		<van-goods-action-icon icon="chat-o" text="客服" dot bind:click="onClickIcon" />
+		<van-goods-action-icon icon="cart-o" text="购物车" 
+		link-type="switchTab" url="/pages/shopping/shopping"/>
+		<van-goods-action-icon icon="shop-o" text="店铺"
+		bind:click="onClickIcon" />
+		<van-goods-action-button text="加入购物车" type="warning" bind:click="addToCart" />
+		<van-goods-action-button text="立即购买"  bind:click="shopNowClick" />
+	</van-goods-action>
+</view>

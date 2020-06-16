@@ -1,1 +1,13 @@
-/* pages/detail/detail.wxss */
+
+#detail{
+  padding-bottom: 120rpx;
+}
+.cswiper{
+  width: 750rpx;
+  height: 900rpx;
+  margin-top: 90rpx;
+}
+.cswiper-image-size{
+  width: 750rpx;
+  height: 1125rpx;
+}

@@ -44,6 +44,7 @@ App({
     })
   },
   globalData: {
-    token: ""
+    cartList:[],
+    allChecked:false
   }
 })

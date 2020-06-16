@@ -1,4 +1,7 @@
 {
   "navigationBarTitleText": "购物车",
-  "usingComponents": {}
+  "usingComponents": {
+    "c-cart-list":"./subcomponents/c-cart-list/c-cart-list",
+    "c-submit-bar":"./subcomponents/c-submit-bar/c-submit-bar"
+  }
 }
